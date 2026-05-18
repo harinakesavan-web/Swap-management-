@@ -7,7 +7,7 @@ public class SwapDeleteRequest {
     private String password;
 
     // Getter for empId.
-    //Testing the Branch functionality
+    //Testing the Branch functionality.
     public String getEmpId() {
         return empId;
     }
