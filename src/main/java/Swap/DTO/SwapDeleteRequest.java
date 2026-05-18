@@ -6,7 +6,7 @@ public class SwapDeleteRequest {
     private String date;
     private String password;
 
-    // Getter for empId
+    // Getter for empId.
     public String getEmpId() {
         return empId;
     }
