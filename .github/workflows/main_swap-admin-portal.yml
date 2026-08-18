@@ -56,6 +56,8 @@ jobs:
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
+      - name: Build with Maven
+        run: mvn clean package -DskipTests
         with:
           app-name: 'swap-admin-portal'
           slot-name: 'Production'
