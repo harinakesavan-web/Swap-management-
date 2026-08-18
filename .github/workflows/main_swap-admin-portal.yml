@@ -25,7 +25,7 @@ jobs:
           distribution: 'microsoft'
 
       - name: Build with Maven
-        run: mvn clean install
+        run: mvn clean package -DskipTests
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -56,8 +56,7 @@ jobs:
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
-      - name: Build with Maven
-        run: mvn clean package -DskipTests
+     
         with:
           app-name: 'swap-admin-portal'
           slot-name: 'Production'
