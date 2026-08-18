@@ -12,9 +12,5 @@ public class SwapApplication {
         SpringApplication.run(Swap.SwapApplication.class, args);
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-        System.out.println(
-                passwordEncoder.encode("password123")
-        );
-
     }
 }
